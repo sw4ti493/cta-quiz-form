@@ -1,5 +1,3 @@
-<html>
-<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -9,17 +7,16 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-</head>
 
 <div class="container"><br>
   <div class="panel panel-default">
     <div class="panel-body">
       <h2>1. What do these acronyms stand for?</h2><br>
-      <form class="form-inline" name="contactform" method="post" action="send_form_email.php" enctype="text/plain">
+      <form class="form-inline" action="https://docs.google.com/forms/d/121-5wIt_eqeEnk9xvwLSeKEVIJfhqezx_ao4OaNcbBw/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
         <div class="">  
           <div class="form-group">
             <label for="exampleInputName2">API:</label><br>
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="" name="question_1_A">
+            <input type="text" class="form-control" name="entry.126739446" value="" class="ss-q-short" id="entry_126739446" dir="auto" title="">
             <button class="btn btn-primary" id="oneA" type="button" data-toggle="collapse" data-target="#collapseExampleA" aria-expanded="false" aria-controls="collapseExampleA">
             Check Answer
           </button>
@@ -31,7 +28,7 @@
           </div><br><br>
           <div class="form-group">
             <label for="exampleInputName3">PSAA:</label><br>
-            <input type="text" class="form-control" id="exampleInputName3" placeholder="" name="question_1_B">
+            <input type="text" class="form-control" name="entry.2074109214" value="" class="ss-q-short" id="entry_2074109214" dir="auto" title="">
             <button class="btn btn-primary" id="oneB" type="button" data-toggle="collapse" data-target="#collapseExampleB" aria-expanded="false" aria-controls="collapseExampleB">
             Check Answer
           </button>
@@ -43,7 +40,7 @@
           </div><br><br>
           <div class="form-group">
             <label for="exampleInputName4">ALD:</label><br>
-            <input type="text" class="form-control" id="exampleInputName4" placeholder="" name="question_1_C">
+            <input type="text" class="form-control" name="entry.75376157" value="" class="ss-q-short" id="entry_75376157" dir="auto" title="">
             <button class="btn btn-primary" id="oneC" type="button" data-toggle="collapse" data-target="#collapseExampleC" aria-expanded="false" aria-controls="collapseExampleC">
             Check Answer
           </button>
@@ -55,7 +52,7 @@
           </div><br>
           <div class="form-group">
             <label for="exampleInputName5">CAASPP:</label><br>
-            <input type="text" class="form-control" id="exampleInputName5" placeholder="" name="question_1_D">
+            <input type="text" class="form-control" name="entry.1199705365" value="" class="ss-q-short" id="entry_1199705365" dir="auto" title="">
             <button class="btn btn-primary" id="oneD" type="button" data-toggle="collapse" data-target="#collapseExampleD" aria-expanded="false" aria-controls="collapseExampleD">
             Check Answer
           </button>
@@ -67,7 +64,7 @@
           </div><br>
           <div class="form-group">
             <label for="exampleInputName6">SBAC:</label><br>
-            <input type="text" class="form-control" id="exampleInputName6" placeholder="" name="question_1_E">
+            <input type="text" class="form-control" name="entry.478152967" value="" class="ss-q-short" id="entry_478152967" dir="auto" title="">
             <button class="btn btn-primary" id="oneE" type="button" data-toggle="collapse" data-target="#collapseExampleE" aria-expanded="false" aria-controls="collapseExampleE">
             Check Answer
           </button>
@@ -79,7 +76,7 @@
           </div><br>
           <div class="form-group">
             <label for="exampleInputName7">CCSS:</label><br>
-            <input type="text" class="form-control" id="exampleInputName7" placeholder="" name="question_1_F">
+            <input type="text" class="form-control" name="entry.88971718" value="" class="ss-q-short" id="entry_88971718" dir="auto" title="">
             <button class="btn btn-primary" id="oneF" type="button" data-toggle="collapse" data-target="#collapseExampleF" aria-expanded="false" aria-controls="collapseExampleF">
             Check Answer
           </button>
@@ -91,7 +88,7 @@
           </div><br>
           <div class="form-group">
             <label for="exampleInputName8">ICA:</label><br>
-            <input type="text" class="form-control" id="exampleInputName8" placeholder="" name="question_1_G">
+            <input type="text" class="form-control" name="entry.664408738" value="" class="ss-q-short" id="entry_664408738" dir="auto" title="">
             <button class="btn btn-primary" id="showTwo" type="button" data-toggle="collapse" data-target="#collapseExampleG" aria-expanded="false" aria-controls="collapseExampleG">
             Check Answer and Next
           </button>
@@ -110,14 +107,14 @@
     $(document).ready(function(){
       $("#showTwo").click(function(){
         $("#QuestionTwoPanel").show();
-        $("#exampleInputName8").prop("disabled",true);
+        <!--$("#entry_664408738").prop("disabled",true);-->
       });
     });
   </script>
   <div class="panel panel-default" style="display: none;" id="QuestionTwoPanel">
     <div class="panel-body">
       <h2>2. What does the California Assessment of Student Performance and Progress do?</h2><br>
-      <textarea class="form-control" id="textTwo" rows="3"></textarea>
+      <textarea class="form-control" name="entry.525158288" rows="8" cols="0" class="ss-q-long" id="entry_525158288" dir="auto"></textarea>
       <br>
       <button class="btn btn-primary" id="showThree" type="button" data-toggle="collapse" data-target="#collapseExampleH" aria-expanded="false" aria-controls="collapseExampleH">
         Next
@@ -133,14 +130,14 @@
     $(document).ready(function(){
       $("#showThree").click(function(){
         $("#QuestionThreePanel").show();
-        $("#textTwo").prop("disabled",true);
+        <!--$("#entry_525158288").prop("disabled",true);-->
       });
     });
   </script>
   <div class="panel panel-default" id="QuestionThreePanel" style="display: none;">
     <div class="panel-body">
       <h2>3. Where do you get information for achievement level descriptors?</h2><br>
-      <textarea class="form-control" id="textThree" rows="3"></textarea>
+      <textarea class="form-control" name="entry.1907781865" rows="8" cols="0" class="ss-q-long" id="entry_1907781865" dir="auto"></textarea>
       <br>
       <button class="btn btn-primary" id="showFour" type="button" data-toggle="collapse" data-target="#collapseExampleI" aria-expanded="false" aria-controls="collapseExampleI">
         Next
@@ -156,14 +153,14 @@
     $(document).ready(function(){
       $("#showFour").click(function(){
         $("#QuestionFourPanel").show();
-        $("#textThree").prop("disabled",true);
+        <!--$("#entry_1907781865").prop("disabled",true);-->
       });
     });
   </script>
   <div class="panel panel-default" id="QuestionFourPanel" style="display: none;">
     <div class="panel-body">
       <h2>4. What’s the best way to use achievement level descriptors?</h2><br>
-      <textarea class="form-control" id="textFour" rows="3"></textarea>
+      <textarea class="form-control" name="entry.237596094" rows="8" cols="0" class="ss-q-long" id="entry_237596094" dir="auto"></textarea>
       <br>
       <button class="btn btn-primary" id="showFive" type="button" data-toggle="collapse" data-target="#collapseExampleJ" aria-expanded="false" aria-controls="collapseExampleJ">
         Next
@@ -179,14 +176,14 @@
     $(document).ready(function(){
       $("#showFive").click(function(){
         $("#QuestionFivePanel").show();
-        $("#textFour").prop("disabled",true);
+       <!-- $("#textFour").prop("disabled",true);-->
       });
     });
   </script>
   <div class="panel panel-default" id="QuestionFivePanel" style="display: none;">
     <div class="panel-body">
       <h2>5. How do you get access to the Smarter Balanced Digital Library?</h2><br>
-      <textarea class="form-control" id="textFive" rows="3"></textarea>
+      <textarea class="form-control" name="entry.282668725" rows="8" cols="0" class="ss-q-long" id="entry_282668725" dir="auto"></textarea>
       <br>
       <button class="btn btn-primary" id="showSix" type="button" data-toggle="collapse" data-target="#collapseExampleK" aria-expanded="false" aria-controls="collapseExampleK">
         Next
@@ -202,14 +199,14 @@
     $(document).ready(function(){
       $("#showSix").click(function(){
         $("#QuestionSixPanel").show();
-        $("#textFive").prop("disabled",true);
+       <!-- $("#entry_282668725").prop("disabled",true);-->
       });
     });
   </script>
   <div class="panel panel-default" id="QuestionSixPanel" style="display: none;">
     <div class="panel-body">
       <h2>6. What’s the difference between an assessment and a test?</h2><br>
-      <textarea class="form-control" id="textSix" rows="3"></textarea>
+      <textarea class="form-control" name="entry.813883717" rows="8" cols="0" class="ss-q-long" id="entry_813883717" dir="auto"></textarea>
       <br>
       <button class="btn btn-primary" id="showSeven" type="button" data-toggle="collapse" data-target="#collapseExampleL" aria-expanded="false" aria-controls="collapseExampleL">
         Next
@@ -225,14 +222,14 @@
     $(document).ready(function(){
       $("#showSeven").click(function(){
         $("#QuestionSevenPanel").show();
-        $("#textSix").prop("disabled",true);
+        <!--$("#entry_813883717").prop("disabled",true);-->
       });
     });
   </script>
   <div class="panel panel-default" id="QuestionSevenPanel" style="display: none;">
     <div class="panel-body">
       <h2>7. What’s the difference between formative and summative assessments?</h2><br>
-      <textarea class="form-control" id="textSeven" rows="3"></textarea>
+      <textarea class="form-control" name="entry.1547738125" rows="8" cols="0" class="ss-q-long" id="entry_1547738125" dir="auto"></textarea>
       <br>
       <button class="btn btn-primary" id="showEight" type="button" data-toggle="collapse" data-target="#collapseExampleM" aria-expanded="false" aria-controls="collapseExampleM">
         Next
@@ -248,14 +245,14 @@
     $(document).ready(function(){
       $("#showEight").click(function(){
         $("#QuestionEightPanel").show();
-        $("#textSeven").prop("disabled",true);
+       <!-- $("#entry_1547738125").prop("disabled",true);-->
       });
     });
   </script>
   <div class="panel panel-default" id="QuestionEightPanel" style="display: none;">
     <div class="panel-body">
       <h2>8. What is the timeline for administering the SBAC summative assessments? </h2><br>
-      <textarea class="form-control" id="textEight" rows="3"></textarea>
+      <textarea class="form-control" name="entry.733312334" rows="8" cols="0" class="ss-q-long" id="entry_733312334" dir="auto"></textarea>
       <br>
       <button class="btn btn-primary" id="showNine" type="button" data-toggle="collapse" data-target="#collapseExampleN" aria-expanded="false" aria-controls="collapseExampleN">
         Next
@@ -271,14 +268,14 @@
     $(document).ready(function(){
       $("#showNine").click(function(){
         $("#QuestionNinePanel").show();
-        $("#textEight").prop("disabled",true);
+        <!--$("#entry_733312334").prop("disabled",true);-->
       });
     });
   </script>
   <div class="panel panel-default" id="QuestionNinePanel" style="display: none;">
     <div class="panel-body">
       <h2>9. What kind of information will students and parents receive after taking the SBAC assessment?</h2><br>
-      <textarea class="form-control" id="textNine" rows="3"></textarea>
+      <textarea class="form-control" name="entry.1145368027" rows="8" cols="0" class="ss-q-long" id="entry_1145368027" dir="auto"></textarea>
       <br>
       <button class="btn btn-primary" id="showTen" type="button" data-toggle="collapse" data-target="#collapseExampleO" aria-expanded="false" aria-controls="collapseExampleO">
         Next
@@ -294,14 +291,14 @@
     $(document).ready(function(){
       $("#showTen").click(function(){
         $("#QuestionTenPanel").show();
-        $("#textNine").prop("disabled",true);
+       <!-- $("#entry_1145368027").prop("disabled",true);-->
       });
     });
   </script>
   <div class="panel panel-default" id="QuestionTenPanel" style="display: none;">
     <div class="panel-body">
       <h2>10. What kind of information will the district receive about students?</h2><br>
-      <textarea class="form-control" id="textTen" rows="3"></textarea>
+      <textarea class="form-control" name="entry.1959955160" rows="8" cols="0" class="ss-q-long" id="entry_1959955160" dir="auto"></textarea>
       <br>
       <button class="btn btn-primary" id="showEleven" type="button" data-toggle="collapse" data-target="#collapseExampleP" aria-expanded="false" aria-controls="collapseExampleP">
         Next
@@ -317,7 +314,7 @@
     $(document).ready(function(){
       $("#showEleven").click(function(){
         $("#QuestionElevenPanel").show();
-        $("#textTen").prop("disabled",true);
+       <!-- $("#entry_1959955160").prop("disabled",true);-->
       });
     });
   </script>
@@ -325,8 +322,8 @@
     <div class="panel-body">
       <h2>11. Will school districts have an API score for the 2014-15 school year?</h2><br>
       <div>  
-        <input type="checkbox" class="col-md-2" id="">Yes <br>
-        <input type="checkbox" class="col-md-2" id="">No
+        <input type="checkbox" class="col-md-2" name="entry.814093418" value="True" id="group_814093418_1" role="checkbox" class="ss-q-checkbox">Yes <br>
+        <input type="checkbox" class="col-md-2" name="entry.814093418" value="False" id="group_814093418_2" role="checkbox" class="ss-q-checkbox">No
       </div>
       <br>
       <button class="btn btn-primary" id="showSubmit" type="button" data-toggle="collapse" data-target="#collapseExampleQ" aria-expanded="false" aria-controls="collapseExampleQ">
@@ -342,33 +339,32 @@
   <script>
     $(document).ready(function(){
       $("#showSubmit").click(function(){
-        $("#SubmitButton").show();
-        $("#textEleven").prop("disabled",true);
+        $("#ss-submit").show();
+       <!-- $("#textEleven").prop("disabled",true);-->
       });
     });
   </script>
-  <button class="btn btn-success" id="SubmitButton" type="submit" style="display: none;"><h3>Submit Quiz</h3></button><Br><br><br>
+  <button class="btn btn-success" type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action " style="display: none;"><h3>Submit Quiz</h3></button><Br><br><br>
     </div></form><br><br><br><br><br><br>
-  <script>
+<!--  <script>
     $(document).ready(function(){
       $("#oneA").click(function(){
-        $("#exampleInputName2").prop("disabled",true);
+        $("#entry_126739446").prop("disabled",true);
       });
       $("#oneB").click(function(){
-        $("#exampleInputName3").prop("disabled",true);
+        $("#entry_2074109214").prop("disabled",true);
       });
       $("#oneC").click(function(){
-        $("#exampleInputName4").prop("disabled",true);
+        $("#entry_75376157").prop("disabled",true);
       });
       $("#oneD").click(function(){
-        $("#exampleInputName5").prop("disabled",true);
+        $("#entry_1199705365").prop("disabled",true);
       });
       $("#oneE").click(function(){
-        $("#exampleInputName6").prop("disabled",true);
+        $("#entry_478152967").prop("disabled",true);
       });
       $("#oneF").click(function(){
-        $("#exampleInputName7").prop("disabled",true);
+        $("#entry_88971718").prop("disabled",true);
       });
     });
-  </script>
-  </html>
+  </script>-->
